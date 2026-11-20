@@ -179,6 +179,24 @@ npm test
 
 O teste sobe uma Byacord falsa local e verifica a lib inteira. Ele valida a lógica da biblioteca, não o servidor real.
 
+## Aviso
+
+A **byacord.js** está em desenvolvimento ativo e ainda não é uma versão final. Ela foi feita seguindo as rotas e o gateway do Discord, e a Byacord é uma plataforma independente. Por isso, algumas funções podem não se comportar exatamente como no discord.js.
+
+**O que pode acontecer**
+- Algum recurso do discord.js que a Byacord ainda não implementou pode dar erro ou não fazer nada.
+- Valores padrão como `api`, `cdn` e `web` podem precisar de ajuste (veja a seção [Configuração](#configuração)).
+- Podem existir bugs que o teste local não pega, porque ele usa um servidor falso e não a Byacord real.
+
+**Encontrou um problema?**
+
+Me chame no Discord: [`457942889511780372`](https://discord.com/users/457942889511780372). Quanto mais detalhes, mais rápido eu resolvo. Mande:
+1. O que você tentou fazer, com um trecho do código.
+2. O erro que apareceu.
+3. O log com `BYACORD_DEBUG=1 node seu-arquivo.js`, escondendo o token.
+
+Se preferir, abra uma *issue* no [GitHub](https://github.com/sowzax/byacord.js/issues). 
+
 ## Contribuindo
 
 Contribuições são bem-vindas: abra uma *issue* ou um *pull request* no [GitHub](https://github.com/sowzax/byacord.js).
