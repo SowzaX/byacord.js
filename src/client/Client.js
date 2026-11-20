@@ -23,7 +23,7 @@ class Client extends EventEmitter {
     this.options = {
       api: options.api || process.env.BYACORD_API || "https://client.bya.lat/api/v9",
       gateway: options.gateway || process.env.BYACORD_GATEWAY || null,
-      cdn: options.cdn || "https://cdn.discordapp.com",
+      cdn: options.cdn || "https://client.bya.lat",
       web: options.web || "https://client.bya.lat",
       intents: options.intents === undefined ? 0 : options.intents,
       partials: options.partials || [],
