@@ -2,16 +2,16 @@
   <img src="https://raw.githubusercontent.com/SowzaX/icons-utils/refs/heads/main/image/b9ea9bd2f03b4df940bd46e9ee9df47c.png" alt="Byacord" width="220" />
 </p>
 
-<h1 align="center">byacord.js</h1>
+<h1 align="center">byacordjs</h1>
 
 <p align="center">
   Crie bots para a <b>Byacord</b> com a mesma API do <b>discord.js v14</b> — incluindo <b>Components V2</b>.
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/byacord.js"><img src="https://img.shields.io/npm/v/byacord.js?color=5865f2&label=npm" alt="npm" /></a>
-  <img src="https://img.shields.io/node/v/byacord.js?color=3c873a" alt="node" />
-  <img src="https://img.shields.io/npm/l/byacord.js?color=blue" alt="licença" />
+  <a href="https://www.npmjs.com/package/byacordjs"><img src="https://img.shields.io/npm/v/byacordjs?color=5865f2&label=npm" alt="npm" /></a>
+  <img src="https://img.shields.io/node/v/byacordjs?color=3c873a" alt="node" />
+  <img src="https://img.shields.io/npm/l/byacordjs?color=blue" alt="licença" />
   <img src="https://img.shields.io/badge/depend%C3%AAncias-1-success" alt="dependências" />
 </p>
 
@@ -19,7 +19,7 @@
 
 ## Por que usar
 
-A Byacord não tinha um módulo para programar bots. A **byacord.js** resolve isso: mesmos nomes de classes, métodos e eventos do discord.js. Se você já sabe fazer bots no Discord, já sabe fazer na Byacord.
+A Byacord não tinha um módulo para programar bots. A **byacordjs** resolve isso: mesmos nomes de classes, métodos e eventos do discord.js. Se você já sabe fazer bots no Discord, já sabe fazer na Byacord.
 
 - **Familiar:** `Client`, `Events`, `SlashCommandBuilder`, `EmbedBuilder`, `interaction.reply()`...
 - **Components V2:** `ContainerBuilder`, `SectionBuilder`, `TextDisplayBuilder`, `MediaGalleryBuilder` e os demais.
@@ -29,7 +29,7 @@ A Byacord não tinha um módulo para programar bots. A **byacord.js** resolve is
 ## Instalação
 
 ```bash
-npm install byacord.js
+npm install byacordjs
 ```
 
 Requer **Node.js 18 ou superior**.
@@ -37,7 +37,7 @@ Requer **Node.js 18 ou superior**.
 ## Primeiros passos
 
 ```js
-const { Client, GatewayIntentBits, Events, SlashCommandBuilder } = require("byacord.js");
+const { Client, GatewayIntentBits, Events, SlashCommandBuilder } = require("byacordjs");
 
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
@@ -62,7 +62,7 @@ client.login("SEU_TOKEN");
 ## Components V2
 
 ```js
-const { ContainerBuilder, ButtonStyle, MessageFlags } = require("byacord.js");
+const { ContainerBuilder, ButtonStyle, MessageFlags } = require("byacordjs");
 
 const container = new ContainerBuilder()
   .setAccentColor("#5865f2")
@@ -86,7 +86,7 @@ Disponíveis: `ContainerBuilder`, `SectionBuilder`, `TextDisplayBuilder`, `Separ
 ### Modal
 
 ```js
-const { ModalBuilder, TextInputBuilder, TextInputStyle } = require("byacord.js");
+const { ModalBuilder, TextInputBuilder, TextInputStyle } = require("byacordjs");
 
 const modal = new ModalBuilder()
   .setCustomId("form")
@@ -121,7 +121,7 @@ Na maioria dos casos basta trocar o import:
 
 ```diff
 - const { Client, GatewayIntentBits } = require("discord.js");
-+ const { Client, GatewayIntentBits } = require("byacord.js");
++ const { Client, GatewayIntentBits } = require("byacordjs");
 ```
 
 | Diferença | Detalhe |
@@ -181,7 +181,7 @@ O teste sobe uma Byacord falsa local e verifica a lib inteira. Ele valida a lóg
 
 ## Aviso
 
-A **byacord.js** está em desenvolvimento ativo e ainda não é uma versão final. Ela foi feita seguindo as rotas e o gateway do Discord, e a Byacord é uma plataforma independente. Por isso, algumas funções podem não se comportar exatamente como no discord.js.
+A **byacordjs** está em desenvolvimento ativo e ainda não é uma versão final. Ela foi feita seguindo as rotas e o gateway do Discord, e a Byacord é uma plataforma independente. Por isso, algumas funções podem não se comportar exatamente como no discord.js.
 
 **O que pode acontecer**
 - Algum recurso do discord.js que a Byacord ainda não implementou pode dar erro ou não fazer nada.
