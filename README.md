@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sowzax/byacord.js/main/assets/byacord.png" alt="Byacord" width="220" />
+  <img src="https://raw.githubusercontent.com/SowzaX/icons-utils/refs/heads/main/image/midia-1.webp" alt="Byacord" width="220" />
 </p>
 
 <h1 align="center">byacord.js</h1>
