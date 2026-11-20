@@ -1,0 +1,39 @@
+{
+  "name": "byacord.js",
+  "version": "1.0.0",
+  "description": "Biblioteca estilo discord.js para criar bots na Byacord — mesmos nomes de classes e funções, com Components V2.",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/smoke.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "keywords": [
+    "byacord",
+    "byacord.js",
+    "bot",
+    "discord.js",
+    "components-v2",
+    "api",
+    "wrapper"
+  ],
+  "author": "SowzaX",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sowzax/byacord.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sowzax/byacord.js/issues"
+  },
+  "homepage": "https://github.com/sowzax/byacord.js#readme"
+}
