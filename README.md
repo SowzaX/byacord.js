@@ -151,7 +151,7 @@ const client = new Client({
   intents: [GatewayIntentBits.Guilds],
   api: "https://client.bya.lat/api/v9", // URL da API REST
   gateway: null,                         // URL do gateway (padrão: descoberta via /gateway/bot)
-  cdn: "https://cdn.discordapp.com",     // base das imagens (avatares, ícones)
+  cdn: "https://client.bya.lat",     // base das imagens (avatares, ícones)
   web: "https://client.bya.lat",         // base dos links de mensagem e canal
   messageCacheMaxSize: 100,              // mensagens em cache por canal
   rest: { timeout: 15000, retries: 3 },
